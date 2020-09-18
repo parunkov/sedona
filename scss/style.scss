@@ -1,0 +1,15 @@
+@import "reset.css";
+
+@font-face {
+  font-family: 'PT Sans', arial;
+  src: url(fonts/pt-sans.ttf);
+}
+
+
+@import "variables.scss";
+@import "components/body.scss";
+@import "components/main-header.scss";
+@import "components/intro.scss";
+@import "components/main-section.scss";
+@import "components/form.scss";
+@import "components/footer.scss";

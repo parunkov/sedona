@@ -1,0 +1,191 @@
+.main-header {
+  position: relative;
+}
+
+.main-header__inner {
+  position: relative;
+  padding: 0;
+}
+
+.main-navigation {
+  display: none;
+  background: $blue;
+
+  a {
+    display: block;
+    padding-top: 6px;
+    min-height: 56px;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-weight: $bold;
+    color: $white;
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+      &:first-child {
+        border-top: none;
+        padding-top: 7px;
+      }
+      &:last-child {
+        border-bottom: none;
+        box-shadow: inset 0 -15px 15px -15px rgba(0, 0, 0, .4);
+      }
+
+      &:hover {
+        background-color: $dark-blue;
+        &:active {
+        color: $blue;
+      }
+    }
+  }
+}
+
+
+.main-navigation-show {
+  display: block;
+}
+.menu__wrap {
+  display: block;
+  position: relative;
+  height: 56px;
+  font-size: 0;
+}
+.menu-btn__before {
+  margin: 0, auto;
+  content: '';
+  display: inline-block;
+  width: 138px;
+  height: 70.5px;
+  background: $blue url(../img/logo-sedona@1x.png) no-repeat center top;
+  mask-image: url(../img/form-logo-triangle.svg);
+  mask-size: 100% 100%;
+  z-index: 10;
+}
+.menu-btn__before-png {
+  background: url(../img/form-logo-triangle.png) no-repeat center top;
+  background-size: contain;
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .menu-btn__before {
+    background: $blue url(../img/logo-sedona@2x.png) no-repeat center top;
+    background-size: 50%;
+    }
+    .menu-btn__before-png {
+      background: url(../img/form-logo-triangle.png) no-repeat center top;
+      background-size: contain;
+    }
+}
+@media (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+  .menu-btn__before {
+    background: $blue url(../img/logo-sedona@3x.png) no-repeat center top;
+    background-size: 50%;
+    }
+    .menu-btn__before-png {
+      background: url(../img/form-logo-triangle.png) no-repeat center top;
+      background-size: contain;
+    }
+}
+.menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 17px;
+  margin-right: 20px;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  background: $blue;
+  mask-image: url(../img/icon-menu.svg);
+}
+.menu-btn-png {
+  background: url(../img/icon-menu.png);
+  background-size: cover;
+}
+
+.menu-close {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 17px;
+  margin-right: 20px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  font-size: 0;
+  background: $white;
+  mask-image: url(../img/icon-cross.svg);
+}
+.menu-close-png {
+  background: url(../img/icon-cross.png);
+  background-size: cover;
+}
+.menu-close-show {
+  display: block;
+}
+@media(min-width: 768px) {
+  .menu-btn, {
+    display: none;
+  }
+  .main-header__inner {
+    background: $white;
+  }
+  .main-navigation {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+    a {
+      position: relative;
+      width: 20%;
+      min-height: 0;
+      margin-top: 7px;
+      font-size: 14px;
+      line-height: 26px;
+      color: $black;
+      background: $white;
+      border: none;
+      box-shadow: none;
+      z-index: 20;
+      &:hover {
+        background: $white;
+        color: $blue;
+          &:active {
+            background: $white;
+            color: $middle-grey;
+          }
+      }
+      &:first-child {
+        order: 3;
+      }
+      &:nth-child(2) {
+        order: 1;
+      }
+      &:nth-child(3) {
+        order: 2;
+        margin-right: 20%;
+      }
+      &:last-child {
+        order: 4;
+        box-shadow: none;
+      }
+    }
+  }
+  .menu-active {
+    color: $brown;
+      &:hover {
+      color: $brown;
+      }
+      &:active {
+        color: $middle-grey;
+      }
+  }
+}

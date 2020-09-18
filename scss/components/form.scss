@@ -1,0 +1,303 @@
+
+.hotel {
+  text-align: left;
+  background: $white;
+}
+
+.form-header {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 23px;
+  cursor: pointer;
+  text-align: center;
+  background: $brown;
+  color: $white;
+  z-index: 10;
+}
+
+.form__inner {
+  display: none;
+  padding-top: 23px;
+}
+.form__inner-show {
+  display: block;
+}
+label {
+  padding-left: 12px;
+  width: 100%;
+  font-weight: $bold;
+  line-height: 26px;
+}
+input {
+  display: block;
+  padding: 8px;
+  padding-left: 12px;
+  margin-top: 6px;
+  width: 100%;
+  background: $light-grey;
+  border: none;
+  outline: none;
+}
+.form__number-1, .form__number-2 {
+  display: inline-block;
+  padding-left: 0;
+  width: 113px;
+}
+.date-wrapper {
+  position: relative;
+}
+.arrival__calendar-icon, .departure__calendar-icon {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  width: 21px;
+  height: 22px;
+  cursor: pointer;
+  background: url(../img/icon-calendar.svg) no-repeat;
+  background-size: contain;
+}
+#arrival, #departure {
+  &::-webkit-inner-spin-button { display: none; }
+  &::-webkit-calendar-picker-indicator { display: none; }
+}
+.form__number-input-1 {
+  display: inline-block;
+  float: left;
+  width: 113px;
+  margin-bottom: 77px;
+  height: 38px;
+}
+.form__number-input-2 {
+  display: inline-block;
+  float: right;
+  width: 113px;
+  margin-bottom: 77px;
+  height: 38px;
+}
+.form__number-1 {
+  float: left;
+}
+.form__number-2 {
+  float: right;
+}
+.form__number-header {
+  padding-left: 12px;
+}
+.grown__wrapper, .children__wrapper {
+  position: relative;
+  input {
+    text-align: center;
+  }
+}
+.grown__minus, .children__minus {
+  position: absolute;
+  left: 10px;
+  bottom: 11px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: url(../img/icon-minus.svg) no-repeat center center;
+  background-size: contain;
+}
+.grown__plus, .children__plus {
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: url(../img/icon-plus.svg) no-repeat;
+  background-size: contain;
+}
+.btn {
+  display: block;
+  padding: 16px;
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $white;
+  background: $blue;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $dark-blue;
+  }
+  &:active {
+    color: $blue;
+  }
+}
+.map {
+  margin: 0 auto;
+  width: $width-small;
+  height: 360px;
+}
+.grown-list__item, .children-list__item {
+    &:nth-child(3n) {
+    margin-bottom: 10px;
+  }
+}
+@media(min-width: 768px) {
+  .hotel {
+    margin: 0 auto;
+    margin-top: -86px;
+    width: 568px;
+    height: 481px;
+  }
+  .form-header {
+    height: 86px;
+      h2 {
+      font-size: 21px;
+      line-height: 26px;
+    }
+  }
+  .form__inner {
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 44px;
+    padding-right: 54px;
+    width: 568px;
+    z-index: 20;
+    background: $white;
+    label {
+      display: inline-block;
+      width: 115px;
+      margin-top: -14px;
+      line-height: 80px;
+    }
+    input {
+      display: inline-block;
+      margin-bottom: 24px;
+      float: right;
+      width: 345px;
+    }
+
+  }
+  .date-wrapper {
+    display: inline-block;
+    float: right;
+  }
+  .arrival__calendar-icon, .departure__calendar-icon {
+    bottom: 30px;
+  }
+  .form__number-header {
+    display: inline-block;
+    float: none;
+  }
+  .form__number-input-1 {
+    display: block;
+    float: left;
+    clear: both;
+    width: 50%;
+    margin-bottom: 64px;
+    label {
+      display: block;
+      float: left;
+      width: 114px;
+      line-height: 85px;
+    }
+    input {
+      display: block;
+      float: left;
+      margin-left: 7px;
+      margin-top: 9px;
+      width: 114px;
+      height: 38px;
+
+    }
+  }
+  .form__number-input-2 {
+    display: block;
+    margin-top: -102px;
+    margin-bottom: 0;
+    width: 50%;
+    float: right;
+    clear: both;
+    label {
+      display: block;
+      float: left;
+      margin-left: 43px;
+      width: 70px;
+      line-height: 85px;
+    }
+    input {
+      display: block;
+      float: left;
+      margin-top: 9px;
+      margin-left: 7px;
+      width: 114px;
+      height: 38px;
+    }
+  }
+  .btn {
+    margin-bottom: 54px;
+    margin-left: 10px;
+    width: 98%;
+  }
+  .grown__minus, .children__minus {
+    left: 133px;
+    bottom: -32px;
+  }
+  .grown__plus, .children__plus {
+    right: 13px;
+    bottom: -32px;
+  }
+  .grown-list__items, .children-list__items {
+    clear: both;
+    padding-left: 12px;
+  }
+  .grown-list__item, .children-list__item {
+    display: inline-block;
+    float: left;
+    width: 149px;
+    margin-right: 5px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    label {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 10px;
+      line-height: 10px;
+    }
+    input {
+      width: 100%;
+    }
+  }
+
+
+}
+@media(min-width: 768px) and (max-width: 1280px) {
+  .map {
+    position: relative;
+    margin-top: -481px;
+    width: $width-medium;
+    height: 595px;
+    iframe {
+      position: absolute;
+      top: 86px;
+      left: 0;
+    }
+  }
+
+}
+@media(min-width: 1280px) {
+  .map {
+    position: relative;
+    margin-top: -481px;
+    width: $inner-width-large;
+    height: 595px;
+    iframe {
+      position: absolute;
+      top: 86px;
+      left: 0;
+    }
+  }
+
+}

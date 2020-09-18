@@ -1,0 +1,139 @@
+
+.main-footer__inner {
+  padding-top: 25px;
+  h2 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.social__inner {
+  padding-top: 28px;
+  padding-bottom: 18px;
+  a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    width: 46px;
+    height: 48px;
+    font-size: 0;
+    background: $blue;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: $dark-blue;
+    }
+    &:active {
+      color: $blue;
+    }
+  }
+}
+.twitter {
+  margin: 17px auto;
+  width: 19px;
+  height: 15px;
+  background: url(../img/icon-twitter.svg) no-repeat center center;
+  background-size: contain;
+  /*mask-image: url(../img/icon-twitter.svg);
+  mask-size: 100% 100%;*/
+  &:active {
+    background: $blue;
+  }
+}
+.facebook {
+  margin: 15px auto;
+  width: 15px;
+  height: 19px;
+  background: url(../img/icon-facebook.svg) no-repeat center center;
+  background-size: contain;
+  &:active {
+    background: $blue;
+  }
+}
+.youtube {
+  margin: 17px auto;
+  width: 19px;
+  height: 15px;
+  background: url(../img/icon-youtube.svg) no-repeat center center;
+  background-size: contain;
+  &:active {
+    background: $blue;
+  }
+}
+
+.glukhanko, .html-academy {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  margin-top: -2px;
+  margin-bottom: 8px;
+  width: 27px;
+  font-size: 0;
+  background: $black;
+  &:hover {
+    background: $blue;
+  }
+  &:active {
+    background: $middle-grey;
+  }
+}
+.glukhanko {
+  height: 30px;
+  mask-image: url(../img/logo-glukhanko.svg);
+  mask-size: 100% 100%;
+}
+.glukhanko-svg {
+  background: url(../img/logo-glukhanko.svg) no-repeat center center;
+  background-size: contain;
+  &:hover {
+    background: url(../img/logo-glukhanko-blue.svg) no-repeat center center;
+    background-size: contain;
+  }
+  &:active {
+    background: url(../img/logo-glukhanko-grey.svg) no-repeat center center;
+    background-size: contain;
+  }
+}
+.html-academy {
+  display: inline-block;
+  height: 33px;
+  mask-image: url(../img/logo-htmlacademy.svg);
+  mask-size: 100% 100%;
+}
+.html-academy-svg {
+  background: url(../img/logo-htmlacademy.svg) no-repeat center center;
+  background-size: contain;
+  &:hover {
+    background: url(../img/logo-htmlacademy-blue.svg) no-repeat center center;
+    background-size: contain;
+  }
+  &:active {
+    background: url(../img/logo-htmlacademy-grey.svg) no-repeat center center;
+    background-size: contain;
+  }
+}
+@media(min-width: 768px) {
+  .main-footer {
+    position: relative;
+    margin-top: -35px;
+    background: $white-opacity;
+    z-index: 10;
+  }
+  .main-footer__inner, .social__inner {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+
+  }
+  .main-footer__inner {
+    padding-top: 47px;
+  }
+  .social__inner {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .twitter {
+    opacity: 1;
+  }
+}
